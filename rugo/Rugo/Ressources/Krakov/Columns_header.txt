@@ -1,0 +1,1 @@
+Lp.	MatID	xTime	xLoc	EnThick	ExThick	EnTens	ExTens	RollForce	FSlip	Daiameter	Rolled length for Work Rolls [m]	youngModulus	Backup roll dia.	Rolled length for Backup rolls	mu	torque	averageSigma	inputError	LubWFlUp	LubWFlLo	LubOilFlUp	LubOilFlLo	Work roll speed
