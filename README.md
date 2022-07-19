@@ -24,7 +24,9 @@ ArcelorMittal is a **leader among the world's steel groups**, more particularly 
 
 Summarizing the production steps, the process ends with a rolling step during which the input metal blocks are transformed into metal coils after being heated, resized in width and thickness, then cooled to obtain the quality and mechanical properties and finally wound to obtain the desired structure.
 
-![image](https://user-images.githubusercontent.com/105392989/176406142-c3d0fce8-721c-4c57-b55e-0988d548e073.png)
+<div id="process" align = "center">
+  <img src="https://user-images.githubusercontent.com/105392989/176406142-c3d0fce8-721c-4c57-b55e-0988d548e073.png" width="900">
+</div>
 
 During this process, the metal may **degrade and show imperfections** on the surface. Once the imperfections appear, it is not possible to **use and sell** the material, so it is discarded or considered defective.   
 In order to limit these degradations, it is **necessary to lubricate correctly and at the right time** the system in order to avoid damaging the metal plates to ensure quality production and material, and thus improve yield.
@@ -38,7 +40,9 @@ of the output variables, in particular the coefficient of friction, and **store 
 
 Here is the **general architecture** of Rugo:
 
-![image](https://user-images.githubusercontent.com/105392989/176406334-2aa6aae0-47d0-4d73-898d-6b2412175c55.png)
+<div id="general architecture" align = "center">
+  <img src="https://user-images.githubusercontent.com/105392989/176406334-2aa6aae0-47d0-4d73-898d-6b2412175c55.png" width="900">
+</div>
 
 If you want more details about each class, feel free to look at the class diagrams!   
 We find a classic **model-view-controller** *(MVC)* architecture to which we have added a new package : *"data_types"* which will allow us to clearly **define the data** that we process as well as the associated instances.
@@ -52,7 +56,9 @@ In chronological order, we have four types of data:
 
 We store our data in several tables through a **relational database SQL**. More precisely, here is the schema of our database with the different tables:
 
-![image](https://user-images.githubusercontent.com/105392989/176406740-c1d76c7f-3bfe-497c-8d7b-0695e72d84db.png)
+<div id="databases schema" align = "center">
+  <img src="https://user-images.githubusercontent.com/105392989/176406740-c1d76c7f-3bfe-497c-8d7b-0695e72d84db.png" width="900">
+</div>
 
 These tables represent **all the data used** by our system during the process.   
 We store all the values used and calculated in different tables in order to **re-use them later** in particular for the graphic display or simply to **keep a trace of the progress** of our application.
@@ -76,50 +82,66 @@ Now, in order to execute our application correctly, here is the procedure to fol
   - 3: Click on the *'start'* button in front of MySQL
   - 4: Click on the *'admin'* button in front of MySQ
 
-![image](https://user-images.githubusercontent.com/105392989/176406918-0000dc91-f2e2-40b3-be6f-76a7e901ff8f.png)
+<div id="step 1" align = "center">
+  <img src="https://user-images.githubusercontent.com/105392989/176406918-0000dc91-f2e2-40b3-be6f-76a7e901ff8f.png" width="650">
+</div>
 
   - 5: Click on the *'Import'* tab
   - 6 : Click on the button *'Choose a file'* and import the document *'db.sql'* from the zipped file 'rugo.rar' (which must be unzipped: use 7-Zip File Manager)
   - 7: Click on the *'Run'* button
 
-![image](https://user-images.githubusercontent.com/105392989/176407000-c70564f6-5a01-451d-9139-f0f4a86eaee2.png)
+<div id="step 2" align = "center">
+  <img src="https://user-images.githubusercontent.com/105392989/176407000-c70564f6-5a01-451d-9139-f0f4a86eaee2.png" width="650">
+</div>
 
   - 8 : Select the *'rugo'* DB
   - 9 : Click on the *'Privileges'* tab
   - 10 : Select *'Add a new user'*
 
-![image](https://user-images.githubusercontent.com/105392989/176407063-ea38edfd-3ecf-4bc4-b8a8-97ab2aa2aec5.png)
+<div id="step 3" align = "center">
+  <img src="https://user-images.githubusercontent.com/105392989/176407063-ea38edfd-3ecf-4bc4-b8a8-97ab2aa2aec5.png" width="650">
+</div>
 
   - 11 : Enter the code *'gettersetter'* in the user name field
   - 12 : Enter the code *'gettersetter'* in the password field
   - 13 : Click on the *'Run'* button
 
-![image](https://user-images.githubusercontent.com/105392989/176407130-72ab29c2-c113-4058-af57-5aad7aaec610.png)
+<div id="step 4" align = "center">
+  <img src="https://user-images.githubusercontent.com/105392989/176407130-72ab29c2-c113-4058-af57-5aad7aaec610.png" width="650">
+</div>
 
   - 14 : Double click on *'start.bat'* in the 'rugo' folder to launch the application
   - 14 bis : Open a command console and write the following command : ```java -jar rugo.jar```
 
 **Congratulations**, you can now use our application. Normally the interface below should have appeared on your screen.
 
-![image](https://user-images.githubusercontent.com/105392989/176407240-ce7f5eea-c5a6-4391-95fe-24ef57fcacd6.png)
+<div id="interface" align = "center">
+  <img src="https://user-images.githubusercontent.com/105392989/176407240-ce7f5eea-c5a6-4391-95fe-24ef57fcacd6.png" width="500">
+</div>
 
 Once the application is launched, you will reach the **login screen**. 
 Starting from an empty initial configuration, it is possible to connect via two accounts, namely a **technician** or a **process engineer**:
 
   - Technician: log = **user** | pw = **user**
   - Process engineer: log = **admin** | pw = **admin**
-  
-![image](https://user-images.githubusercontent.com/105392989/176407362-96f611bf-ce86-4887-b93d-f1aad5ba9d51.png)
+
+<div id="connection" align = "center">
+  <img src="https://user-images.githubusercontent.com/105392989/176407362-96f611bf-ce86-4887-b93d-f1aad5ba9d51.png" width="500">
+</div>
 
 Depending on your status, you have two choices:
 
   - The **display of graphs** and the evolution of certain quantities
   
-  ![image](https://user-images.githubusercontent.com/105392989/176407505-26d9a16b-24e2-488b-a040-25da1c11b700.png)  
+  <div id="graphs" align = "center">
+    <img src="https://user-images.githubusercontent.com/105392989/176407505-26d9a16b-24e2-488b-a040-25da1c11b700.png" width="500">
+  </div>
   
   - The **management of the users**
   
-  ![image](https://user-images.githubusercontent.com/105392989/176407598-f04d6ba7-4c0d-47cb-b03f-df141c557e4e.png)
+  <div id="users management" align = "center">
+    <img src="https://user-images.githubusercontent.com/105392989/176407598-f04d6ba7-4c0d-47cb-b03f-df141c557e4e.png" width="500">
+  </div>
 
 ## **4. Suggestions for improvement**
 
